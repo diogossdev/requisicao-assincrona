@@ -1,16 +1,33 @@
-# React + Vite
+# 📍 Cadastro de Endereço via CEP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido em **React** utilizando **Vite** para solucionar o Exercício 1.3 (Requisição Assíncrona). A aplicação consiste em um formulário inteligente que consome a API pública do **ViaCEP** para preencher automaticamente os dados de localização (Rua, Bairro, Estado e Cidade) assim que o usuário digita um CEP válido.
 
-Currently, two official plugins are available:
+O projeto foi estruturado do zero e está configurado para deploy automatizado, hospedado diretamente no **GitHub Pages**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Busca Automática:** A requisição HTTP acontece de forma assíncrona assim que o 8º dígito do CEP é preenchido, eliminando a necessidade de um botão de "Enviar".
+* **Sanitização de Input:** Filtra e remove qualquer caractere não numérico automaticamente enquanto o usuário digita.
+* **Tratamento de Erros:** Exibe feedbacks visuais amigáveis caso o CEP não seja encontrado na base de dados ou ocorra alguma falha de conexão com a API.
+* **Interface Fiel:** Layout centralizado, limpo e minimalista baseado no protótipo proposto para a atividade.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias Utilizadas
+
+* [React](https://react.dev/) — Biblioteca Javascript para construção de interfaces modulares.
+* [Vite](https://vite.dev/) — Build tool ultra-rápida para o ecossistema front-end moderno.
+* [ViaCEP API](https://viacep.com.br/) — API pública e gratuita para conversão de CEP em endereços no Brasil.
+* CSS3 — Estilização customizada e responsiva, sem uso de frameworks externos.
+
+---
+
+## 💻 Como Rodar o Projeto Localmente
+
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/address-cep-api.git](https://github.com/SEU_USUARIO/address-cep-api.git)
